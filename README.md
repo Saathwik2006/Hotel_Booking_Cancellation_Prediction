@@ -17,3 +17,25 @@ This project aims to predict whether a hotel booking will be cancelled using mac
 - Matplotlib
 - Scikit-learn
 - XGBoost
+
+## Feature Engineering
+
+Extended the dataset by creating several domain-specific features to better represent customer booking behavior and improve predictive performance.
+
+### Engineered Features
+- Total Guests
+- Total Nights
+- Previous Cancellation Rate
+- Total Previous Bookings
+- ADR per Guest
+- ADR per Night
+- Lead Time per Night
+- Lead Time × Previous Cancellation Rate
+- Guests per Night
+- Parking per Guest
+- Room Change Indicator
+- Meal Indicator
+- Seasonal Booking
+- Booking-related categorical bins (Lead Time, ADR, Guests, Nights, Waiting List, Special Requests, etc.)
+
+The impact of each engineered feature was evaluated through multiple experiments before finalizing the feature set.
