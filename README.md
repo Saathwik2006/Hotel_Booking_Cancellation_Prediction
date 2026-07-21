@@ -47,6 +47,7 @@ Implemented multiple machine learning algorithms and compared their predictive p
 ### Models Implemented
 - Logistic Regression
 - Random Forest Classifier
+- Xgboost Classifier
 
 
 
@@ -72,4 +73,6 @@ The models were trained on both the original and engineered feature sets to anal
 |--------------------:|---------:|----------:|-------:|---------:|--------:|-----------------:|
 | Logistic Regression |  0.8301  |  0.8313   | 0.7447 |  0.7856  |  0.9128 |      0.8229      |
 | Random Forest       |  0.8710  |  0.8800   | 0.8045 |  0.8400  |  0.9128 |      0.8694      |
+| Xgboost             |  0.8935  |  0.9020   | 0.8359 |  0.8677  |  0.9596 |      0.8869      |
  
+
