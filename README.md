@@ -85,3 +85,21 @@ The models were trained on both the original and engineered feature sets to anal
 - **XGBoost (Feature Engineering):** Improved recall and cross-validation performance through engineered features.
 - **XGBoost (Final Optimized Model):** Produced the best overall performance with **89.68% Accuracy**, **96.30% ROC-AUC**, and **89.59% Mean Cross-Validation Accuracy** after hyperparameter tuning and feature selection.
 - The small difference between the test Accuracy (**89.68%**) and Mean Cross-Validation Accuracy (**89.59%**) demonstrates that the model generalizes well to unseen data and is not significantly overfitted.
+
+
+## Dataset Expansion Comparison
+
+To evaluate the impact of increasing the dataset size, the final optimized XGBoost model was trained on both the original dataset (79,330 bookings) and the expanded dataset (1,18,987 bookings).
+
+| Dataset Size | Test Accuracy | Mean CV Accuracy |
+|--------------|--------------:|-----------------:|
+| ~79,330 Bookings | **89.17%** | **89.11%** |
+| 1,18,987 Bookings| **89.68%** | **89.59%** |
+
+### Observations
+
+- Expanding the dataset by nearly **50%** improved both the test accuracy and cross-validation accuracy.
+- Test Accuracy increased from **89.17%** to **89.68%**.
+- Mean Cross-Validation Accuracy increased from **89.11%** to **89.59%**.
+- The close agreement between test accuracy and cross-validation accuracy in both experiments indicates **strong generalization with minimal overfitting**.
+- Increasing the amount of training data improved the model's robustness and stability while maintaining consistent predictive performance on unseen data.
