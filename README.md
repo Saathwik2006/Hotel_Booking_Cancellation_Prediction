@@ -48,7 +48,7 @@ Implemented multiple machine learning algorithms and compared their predictive p
 - Logistic Regression
 - Random Forest Classifier
 - Xgboost Classifier
-
+- Xgboost Classifier ( tuned )
 
 
 
@@ -69,10 +69,19 @@ The models were trained on both the original and engineered feature sets to anal
 
 ### Evaluation
 
-| Model               | Accuracy | Precision | Recall | F1 Score | ROC-AUC | Mean CV Accuracy |
-|--------------------:|---------:|----------:|-------:|---------:|--------:|-----------------:|
-| Logistic Regression |  0.8301  |  0.8313   | 0.7447 |  0.7856  |  0.9128 |      0.8229      |
-| Random Forest       |  0.8710  |  0.8800   | 0.8045 |  0.8400  |  0.9128 |      0.8694      |
-| Xgboost             |  0.8935  |  0.9020   | 0.8359 |  0.8677  |  0.9596 |      0.8869      |
- 
+| Model                  | Accuracy | Precision | Recall | F1 Score | ROC-AUC | Mean CV Accuracy |
+|-----------------------:|---------:|----------:|-------:|---------:|--------:|-----------------:|
+| Logistic Regression    |  0.8301  |  0.8313   | 0.7447 |  0.7856  |  0.9128 |      0.8229      |
+| Random Forest          |  0.8710  |  0.8800   | 0.8045 |  0.8400  |  0.9128 |      0.8694      |
+| Xgboost                |  0.8935  |  0.9020   | 0.8359 |  0.8677  |  0.9596 |      0.8869      |
+| Xgboost ( Feature Eng )|  0.8912  |  0.8822   | 0.8538 |  0.8678  |  0.9606 |      0.8907      |
+| XGBoost ( Tuned Model )|  0.8968  |  0.8724   | 0.8454 |  0.8587  |  0.9630 |      0.8959      |
 
+### Model Comparison Summary
+
+- **Logistic Regression:** Simple baseline model with **83.01%** accuracy.
+- **Random Forest:** Improved predictive performance with **87.10%** accuracy.
+- **XGBoost (Baseline):** Achieved the highest baseline accuracy of **89.35%**.
+- **XGBoost (Feature Engineering):** Improved recall and cross-validation performance through engineered features.
+- **XGBoost (Final Optimized Model):** Produced the best overall performance with **89.68% Accuracy**, **96.30% ROC-AUC**, and **89.59% Mean Cross-Validation Accuracy** after hyperparameter tuning and feature selection.
+- The small difference between the test Accuracy (**89.68%**) and Mean Cross-Validation Accuracy (**89.59%**) demonstrates that the model generalizes well to unseen data and is not significantly overfitted.
